@@ -1,0 +1,28 @@
+
+/* Individual card styling */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #b6b4b4;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;  
+ 
+}
+
+/* Optional: title, price, description */
+.card h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
