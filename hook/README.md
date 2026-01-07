@@ -1,16 +1,18 @@
-# React + Vite
+# React Hooks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains examples of **React Hooks** including `useState`, `useEffect`, `useMemo`, and `useCallback`.  
+It is intended as a simple cheat sheet and reference for learning React Hooks.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Hooks Overview
 
-## React Compiler
+| Hook          | Definition                                                                 | Syntax / Example |
+|---------------|---------------------------------------------------------------------------|----------------|
+| **useState**  | Creates a state variable in a functional component.                       | `const [state, setState] = useState(initialValue);`<br>`const [count, setCount] = useState(0);` |
+| **useEffect** | Performs side effects like API calls, DOM updates, or event listeners.    | `useEffect(() => { console.log("Updated"); }, [count]);` |
+| **useMemo**   | Memoizes expensive calculations so they only recompute when dependencies change. | `const memoizedValue = useMemo(() => computeValue(a, b), [a, b]);`<br>`const expensive = useMemo(() => count*1000, [count]);` |
+| **useCallback** | Memoizes functions to prevent unnecessary recreation on every render. Useful for optimizing child components. | `const handleClick = useCallback(() => { console.log("Clicked"); }, [count]);` |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
