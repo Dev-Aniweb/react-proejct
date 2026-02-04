@@ -1,8 +1,10 @@
-# React + Vite
+# React State Management Examples: Context API & Recoil
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates two different approaches to managing global state in React:
 
-Currently, two official plugins are available:
+1. **Context API** – built-in React solution for sharing state across components.
+2. **Recoil** – a third-party library that provides a more flexible and scalable state management system.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+
